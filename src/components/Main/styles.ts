@@ -105,6 +105,7 @@ padding:5px;
 a{
 
 display:flex;
+color:white;
 align-items:center;
 justify-content:center;
 gap:7px;

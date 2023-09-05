@@ -4,7 +4,6 @@ import SliderMain from "./SlidesMain/SliderMain";
 import { MainContent, Container, TextContent, Button, SlideContainer } from "./styles";
 import About from "../About";
 import Products from "../Products";
-import { PiPopcornBold } from "react-icons/pi";
 
 
 
@@ -53,7 +52,7 @@ export default function Main() {
                 <TextContent>
 
                     <h1>
-                        Delicie-se com nossas pipocas gourmet, estouradas com paixão! 🥰 <br /> Vamos transformar seu melhor momento em uma explosão de sabores!
+                        Delicie-se com nossas pipocas gourmet, estouradas com paixão!  <br /> Vamos transformar seu melhor momento em uma explosão de sabores!
                     </h1>
                        
                        {!isVisible && 
@@ -77,7 +76,7 @@ export default function Main() {
                         <a target="_blank" 
                          href="https://api.whatsapp.com/send?phone=551299676720">
                             
-                            Quero Comprar <PiPopcornBold size='20px'/>
+                            Quero Comprar
                         </a>
                     </Button>
 

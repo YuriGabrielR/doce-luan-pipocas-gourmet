@@ -36,8 +36,10 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background-image:url('assets/images/pattern/patternBg.png');
         background-position:center;
+      
         min-width:100vw;
         min-height:100vh;
+        z-index:-1;
         overflow-x:hidden;
        
     }

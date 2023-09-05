@@ -3,6 +3,8 @@ import { Container, Feedback, FeedbacksBox, IconStars, SeeMoreButton, TitleFeedb
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 import { Testimonials } from "./data";
 
@@ -23,7 +25,8 @@ export default function Feedbacks() {
 
         <Swiper className="testimonials_slides" 
         slidesPerView={1}
-
+        modules={[Pagination]}
+        pagination={true}
         breakpoints={{
 
           729:{slidesPerView:2},
