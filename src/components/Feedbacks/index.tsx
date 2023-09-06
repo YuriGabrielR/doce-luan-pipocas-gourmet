@@ -28,21 +28,13 @@ export default function Feedbacks() {
         modules={[Pagination]}
         pagination={true}
         breakpoints={{
-
+ 
           729:{slidesPerView:2},
 
           1064:{slidesPerView:3}
 
         }}
-
-
        grabCursor={true}
-       
-        // modules={[Autoplay]}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
         >
         
 

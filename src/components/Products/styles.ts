@@ -6,7 +6,7 @@ display:flex;
 flex-direction:column;
 
 align-items:center;
-gap:30px;
+gap:40px;
 width:100%;
 height:600px; 
 padding:20px;
@@ -63,6 +63,23 @@ justify-content:center;
 gap:6px; 
 background-color:${theme.color.mainColor};
 z-index:10;
+`;
 
 
+export const Button = styled.button`
+cursor: pointer;
+width:160px;
+height:35px;
+background-color:#d54b2dd9;
+border-radius:15px;
+border:1px solid white;
+
+
+a{
+    font-family:${theme.fonts.secondaryFont}; 
+    font-size:14px;
+    text-transform:uppercase;
+    color:white;
+    font-weight:800;
+}
 `;

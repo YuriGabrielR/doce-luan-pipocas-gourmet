@@ -21,14 +21,14 @@ export const data = [
         id: 3,
 
         product: 'Cappuccino',
-        description: 'Pipocas com o aroma e o sabor inconfundível do cappuccino, feito de forma especial para os amantes de café',
+        description: 'Pipocas com o aroma e o sabor inconfundível do cappuccino, feito para amantes do café.',
         src:'assets/images/products/Cappuccino.jpg'
     }, 
     {
         id: 4,
 
         product: 'Paçoca',
-        description: 'Pipocas revestidas com o sabor autêntico da paçoca, uma explosão de amendoim e doçura em cada pedaço.',
+        description: 'Pipocas revestidas com o sabor autêntico da paçoca, uma explosão de amendoim e doçura.',
         src:'assets/images/products/Paçoca.jpg'
     }, 
     {
@@ -42,49 +42,75 @@ export const data = [
         id: 6,
 
         product: 'Sonho de Valsa',
-        description: 'Pipocas que combinam o doce do chocolate e o crocante do Sonho de Valsa, uma experiência encantadora.',
+        description: 'Pipocas com o sabor do bombom mais querido por todos, uma explosão de chocolate.',
         src:'assets/images/products/Bombom.jpg'
     }, 
+
     {
         id: 7,
+
+        product: 'Leite Ninho',
+        description: ' Pipocas gourmet cobertas com o delicioso e cremoso sabor do leite em pó Ninho.',
+        src:'assets/images/products/Ninho.jpg'
+    }, 
+
+    {
+        id: 8,
+
+        product: 'Cocada',
+        description: 'Pipocas saborizadas com coco e leite condensado.',
+        src:'assets/images/products/Cocada.jpg'
+    }, 
+
+    {
+        id: 9,
+
+        product: 'Ovomaltine',
+        description: 'Pipocas cobertas com a irresistível mistura de chocolate e malted milk Ovomaltine.',
+        src:'assets/images/products/Ovomaltine.jpg'
+    }, 
+
+
+    {
+        id: 10,
 
         product: 'Tortinha de Limão',
         description: 'Pipocas com um toque cítrico, crocantes e temperadas com limão.',
         src:'assets/images/products/Limão.jpg'
     }, 
     {
-        id: 8,
+        id: 11,
 
         product: 'Doritos',
         description: 'Pipocas temperadas com o sabor audacioso e picante das tortilhas Doritos.',
         src:'assets/images/products/Doritos.jpg'
     }, 
     {
-        id: 9,
+        id: 12,
 
         product: 'Chocolate',
         description: 'Uma indulgência de pipocas cobertas com camadas de chocolate luxuoso.',
         src:'assets/images/products/Chocolate.png'
     }, 
     {
-        id: 10,
+        id: 13,
 
         product: 'Morango',
         description: 'Pipocas doces com sabor intenso de morango, uma explosão frutada a cada mordida.',
         src:'assets/images/products/Morango.jpg'
     }, 
     {
-        id: 11,
+        id: 14,
 
         product: 'Maracujá',
         description: 'Pipocas com um toque tropical, cobertas com o sabor agridoce do maracujá.',
         src:'assets/images/products/Maracujá.jpg'
     }, 
     {
-        id: 12,
+        id: 15,
 
         product: 'Tortinha de Maracujá',
-        description: 'Pipocas com o equilíbrio perfeito entre a crocância da tortilhaprestígio e o toque refrescante do maracujá.',
+        description: 'Pipocas com o equilíbrio perfeito entre a doçura e um azedinho.',
         src:'assets/images/products/TortinhaMaracujá.jpg'
     }, 
 

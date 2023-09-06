@@ -119,6 +119,7 @@ h4{
 `;
 
 export const SeeMoreButton = styled.button`
+cursor: pointer;
 display:flex;
 align-items:center;
 justify-content:center;

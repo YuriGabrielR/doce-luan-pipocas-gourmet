@@ -144,11 +144,13 @@ height:45px;
 border-radius:15px;
 background-color:transparent;
 border: 1px solid white;
-color:white;
-font-family:${theme.fonts.secondaryFont};
-font-weight:700;
-text-transform:uppercase;
+
 margin-bottom:20px;
 
-
+a{
+    color:white;
+    font-family:${theme.fonts.secondaryFont};
+    font-weight:700;
+    text-transform:uppercase;
+}
 `;

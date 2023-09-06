@@ -1,6 +1,6 @@
 import { theme } from "../../styles/theme";
 import Cards from "./Cards";
-import { ContainerProducts, ContainerSlider, TitleProducts } from "./styles";
+import { ContainerProducts, ContainerSlider, TitleProducts, Button } from "./styles";
 import {AiFillStar} from 'react-icons/ai'
 
 export default function Products() {
@@ -21,7 +21,17 @@ export default function Products() {
       <Cards/>
       </ContainerSlider>
 
-      
+      <Button>
+        <a target="_blank"
+         href="https://api.whatsapp.com/send?phone=551299676720"
+        >
+          
+          Quero provar 😋
+
+          
+          
+        </a>
+      </Button>
     </ContainerProducts>
   )
 }

@@ -82,10 +82,11 @@ display:flex;
 justify-content:center;
 align-items:center;
 cursor: pointer;
-width:210px;
+width:200px;
 height:40px; 
 background-color: ${theme.color.mainColor};
-border-radius:20px;
+border:1px solid white;
+border-radius:15px;
 padding:5px;
 
 @media (max-width:527px){
