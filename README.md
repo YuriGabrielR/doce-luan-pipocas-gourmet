@@ -20,8 +20,7 @@
 
 
 ## Apresentação do projeto: 🎨
-![screencapture-localhost-5173-2023-09-29-23_31_24](https://github.com/YuriGabrielR/doce-luan-pipocas-gourmet/assets/94508908/e43bfd51-724a-4695-a10a-cddc28747920)
-
+![screencapture-localhost-5173-2023-09-30-00_08_39](https://github.com/YuriGabrielR/doce-luan-pipocas-gourmet/assets/94508908/848ca2f9-f1b5-415c-85e1-6e5054fea303)
 
 
 
