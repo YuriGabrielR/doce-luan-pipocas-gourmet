@@ -1,5 +1,4 @@
-import { BsBalloonHeartFill, BsInstagram } from "react-icons/bs";
-import { Container, Feedback, FeedbacksBox, IconStars, SeeMoreButton, TitleFeedbacks } from "./styles";
+import { Container, Feedback, FeedbacksBox, ImageProfile, ProfileBox,TitleFeedbacks } from "./styles";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -14,8 +13,9 @@ export default function Feedbacks() {
 
       <TitleFeedbacks>
 
-       <BsBalloonHeartFill id='Feedbacks' size='24px'/> 
-       Feedbacks 
+       <p> O que falam da Doce Luan </p> 
+
+       <h2>Depoimentos</h2>
        
 
       </TitleFeedbacks>
@@ -26,15 +26,8 @@ export default function Feedbacks() {
         <Swiper className="testimonials_slides" 
         slidesPerView={1}
         modules={[Pagination]}
+        grabCursor={true}
         pagination={true}
-        breakpoints={{
- 
-          729:{slidesPerView:2},
-
-          1064:{slidesPerView:3}
-
-        }}
-       grabCursor={true}
         >
         
 
@@ -44,10 +37,15 @@ export default function Feedbacks() {
             <SwiperSlide className="slide__feedback" key={index}> 
                         
             <Feedback>
-              <span> <IconStars/> </span>
 
-              <h4> {item.description} </h4>
+              <p> {item.message} </p>
 
+              <ProfileBox>
+                <ImageProfile src={item.profile.image}/>
+
+                <h4>{item.profile.nome}</h4>
+                <p>{item.profile.type}</p>
+              </ProfileBox>
             </Feedback>
 
 
@@ -63,10 +61,6 @@ export default function Feedbacks() {
         
       </FeedbacksBox>
 
-        <SeeMoreButton> 
-          <a target="_blank" href="https://www.instagram.com/doce_luan/">
-          Ver mais no Instagram <BsInstagram size='20px'/>
-          </a>  </SeeMoreButton>
 
     </Container>
   )

@@ -8,26 +8,43 @@ export const Container = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:50px;
+    gap:25px;
     margin-top:100px;
     max-width:1280px; 
     padding:20px;
     height:auto;
-
+    
     @media (max-width:740px){
-        margin-top:200px;
+        margin-top:140px;
 
     }
 
 `;
 
-export const TitleFeedbacks = styled.h2`
+export const TitleFeedbacks = styled.div`
 display:flex;
+flex-direction:column;
 align-items:center;
-gap:13px;
-font-size:24px; 
-font-family:${theme.fonts.mainFont};
-color:${theme.color.mainColor}; 
+gap:10px;
+
+
+h2{
+    font-size:24px; 
+    font-family:${theme.fonts.descriptionFont};
+    color:pink;
+    text-transform:uppercase;
+
+}
+
+p{
+    font-size:14px;
+    font-family:${theme.fonts.descriptionFont};
+    color:grey;
+    text-transform:uppercase;
+
+}
+
+
 
 `;
 
@@ -39,30 +56,22 @@ align-items:center;
 justify-content:center;
 gap:40px;
 width:100%;
-height:300px;
-
+height:auto;
 `;
 
-export const IconStars = styled.div`
-width: 93px;
-height:20px;
-background:url('assets/images/feedbacks/avaliacao_icon.png');
-background-size:cover;
-background-position:center;
-`;
 export const Feedback = styled.div`
 position:relative;
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:space-around;
-width:300px; 
-height:170px;
+width:380px; 
+height:280px;
 background-color:white;
 border-radius:10px;
 padding:10px;
 margin:0 auto;
-
+box-shadow:1px 1px 3px grey;
 
 span{
     display:flex;
@@ -71,8 +80,8 @@ span{
     
 }
 
-h4{
-    font-family: ${theme.fonts.mainFont};
+p{
+    font-family: ${theme.fonts.descriptionFont};
     color:#606264;
     width: 90%;
     text-align:center;
@@ -85,25 +94,9 @@ h4{
 
 }
 
-&::after{
-    position:absolute;
-    right:-20px;
-    top:-30px;
-    content:'';
-    background:url('src/assets/images/feedbacks/iconAfter.png');
-    background-size:cover;
-    height:40px;
-    width:40px;
-
-    @media (max-width:350px){
-
-    right:10px;
-    }
-
-}
 
 
-@media (max-width:420px){
+@media (max-width:450px){
 
     width:270px;
 
@@ -115,30 +108,37 @@ h4{
 
 }
 
-
 `;
 
-export const SeeMoreButton = styled.button`
-cursor: pointer;
-display:flex;
+
+export const ProfileBox = styled.div`
+position:absolute;
+display:flex; 
+flex-direction:column;
 align-items:center;
-justify-content:center;
-border-radius:15px;
-border: 1px solid white;
-background-color:${theme.color.mainColor};
-width:220px; 
-height:45px;
+width:100%;
+height:160px; 
+bottom:-120px;
 
-a{
-display:flex;
-align-items:center;
-color:white;
-font-weight:700;
-font-family:${theme.fonts.secondaryFont};
-text-transform:uppercase;
-gap:6px;
+h4{
+    font-size:14px; 
+    font-family:${theme.fonts.descriptionFont};
+    color:pink;
+}
 
-};
-
-
+p{
+    font-size:12px; 
+    font-family:${theme.fonts.descriptionFont};
+}
 `;
+
+export const ImageProfile = styled.img`
+width: 80px; 
+height:80px; 
+border-radius:50%;
+border:3px solid ${theme.color.secondaryColor};
+object-fit:cover;
+object-position:center;
+`;
+
+

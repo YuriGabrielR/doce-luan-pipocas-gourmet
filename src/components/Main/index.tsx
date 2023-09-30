@@ -1,10 +1,9 @@
 
 import { useEffect, useState } from "react";
 import SliderMain from "./SlidesMain/SliderMain";
-import { MainContent, Container, TextContent, Button, SlideContainer } from "./styles";
-import About from "../About";
-import Products from "../Products";
+import { MainContent, Container, TextContent, Button, SlideContainer, BoxMainContent, Box } from "./styles";
 import { Link } from "react-scroll";
+import { BoxMainData } from "./data";
 
 
 
@@ -46,6 +45,9 @@ export default function Main() {
     }, [])
 
     return (
+        
+        <>
+       
 
         <MainContent>
 
@@ -76,7 +78,7 @@ export default function Main() {
 
                         <Link to="#Sabores" spy={true} smooth={true} offset={-60} duration={500} target="_blank" 
                          href="https://api.whatsapp.com/send?phone=551299676720">
-                            
+                                                        
                             VER MAIS
                         </Link>
                     </Button>
@@ -95,13 +97,27 @@ export default function Main() {
             </Container>
 
 
-            <About/>
+            <BoxMainContent>
 
-            <Products/>
+                {BoxMainData.map((data, index)=>(
 
-                    
+                <Box key={index}>
+
+                    <span>{data.icon}</span>
+
+                    <h3>{data.title}</h3>
+
+                    <p> {data.description}</p>
+                                    
+                </Box>
+
+                ))}
+               
+            </BoxMainContent>
         </MainContent>
 
+        </>
+        
 
     )
 }

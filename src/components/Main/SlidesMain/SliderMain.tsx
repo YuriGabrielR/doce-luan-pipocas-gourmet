@@ -25,7 +25,6 @@ export default function SliderMain() {
 
 
         <SwiperSlide key={image.id} className='containerSlideImage'>
-        {/* <img src={image.src} alt={image.alt} className='slide-img' /> */}
 
         <ImageSlide aria-labelledby={image.alt} src={image.src}/>
 

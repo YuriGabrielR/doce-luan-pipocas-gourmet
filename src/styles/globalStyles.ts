@@ -34,12 +34,12 @@ export const GlobalStyle = createGlobalStyle`
 
 
     body{
-        background-image:url('assets/images/pattern/patternBg.png');
         background-position:center;
+        /* background-color:#F8E9D0; */
       
         min-width:100vw;
         min-height:100vh;
-        z-index:-1;
+        
         overflow-x:hidden;
        
     }
@@ -73,15 +73,15 @@ export const GlobalStyle = createGlobalStyle`
  //Controll slides of Main Slider  
  
     .SwiperContainer{
-        
-        height:70%;
+      
+        height:100%;
         width:100%;
         
     };
 
     .SwiperContainer.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
 
-        bottom: 33px;
+        bottom: 50px;
 
 
         @media (max-width:800px) {
@@ -97,7 +97,17 @@ export const GlobalStyle = createGlobalStyle`
     .containerSlideImage{
         display:flex;
         justify-content:center;
+        align-items:center;
         width:100%;
+        margin: 0 auto;
+        height:500px;
+        
+
+        @media (max-width:800px) {
+
+            height:auto;
+            
+        }
     }
 
     
@@ -115,70 +125,60 @@ export const GlobalStyle = createGlobalStyle`
 //Controll slides of Main Slider  
 
 
-
  //Controll slides of Products 
- .Swiper_Products .swiper-wrapper{
-    padding-top:45px;
-    gap:30px;
 
+.Swiper_Products {
 
-    @media (max-width:545px) {
-    gap:15px;
-
-    }
-
-
-    @media (max-width:405px) {
-    gap:0px;
-
-    }
-
-    .swiper-button-next{
-
-        top:-50px;
-    }
     
- }
-
- .Swiper_Products .swiper-button-next{
-    top:30px;
-    width:35px;
-    height:30px;
-    
-    border-radius:30%;
-
-    &::after{
-        font-size:20px;
-        font-weight:800;
-        color:${theme.color.mainColor};
-        margin-left:5px;
-    }
- }
-
- .Swiper_Products .swiper-button-prev{
-    top:30px;
-    left:auto; 
-    right:50px;
-    
-    border-radius:30%;
-    width:35px;
-    height:30px;
-   
-    
-    
-    &::after{
-        font-size:20px;
-        font-weight:800;
-        color:${theme.color.mainColor};
-        margin-right:5px;
-    }
- }
-
-
  .Slide_Products{
     
     flex-shrink:1;
  }
+
+    //Wrapper 
+        .swiper-wrapper {
+        padding-top:45px;
+        gap:30px;
+
+
+        @media (max-width:545px) {
+        gap:15px;
+
+        }
+
+
+        @media (max-width:405px) {
+        gap:0px;
+
+        } 
+
+        .swiper-button-next{
+
+            top:-50px;
+        }
+      }
+    //Wrapper
+
+      //pagination controlls
+
+            .swiper-pagination-bullet-active{
+                background-color:${theme.color.secondaryColor};
+
+            }
+
+
+            .Swiper_Products .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+
+                bottom: 50px;
+            };
+ 
+
+
+      //pagination controlls
+
+}
+
+
 
 //Controll slides of Products 
 
@@ -235,7 +235,7 @@ bottom:-50px;
     }
 }
 .swiper-button-prev:after, .swiper-button-next:after{
-color:white;
+color:${theme.color.mainColor};
 font-size: 30px;
 
  
@@ -247,7 +247,7 @@ font-size: 30px;
 
 
 .swiper-pagination-bullet-active{
-    background-color:${theme.color.secondaryColor};
+    background-color:${theme.color.mainColor};
 
 
 }
@@ -258,13 +258,13 @@ font-size: 30px;
 
 //slide feedbacks 
     .testimonials_slides {
-        height:300px;
+        height:550px;
        
         
 
          .slide__feedback{
             width:300px;
-            height:170px;
+            height:auto;
             
             margin-top:50px;
           
@@ -278,8 +278,18 @@ font-size: 30px;
          } 
         
         
+         .swiper-pagination-bullet-active{
+            background-color:pink;
 
 
+        }
+
+
+        .testimonials_slides .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+
+            bottom:80px;
+
+        };
     }
 }`
 

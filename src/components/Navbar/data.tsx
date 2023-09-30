@@ -22,6 +22,12 @@ export const dataNavbar = [
 
     },
 
+    { to: '#Parcerias', 
+      text: 'Parcerias', 
+      id: 'Parcerias'
+
+    },
+
 ];
 
 export const iconStyle = (Icon:IconType) => 

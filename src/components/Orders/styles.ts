@@ -3,9 +3,9 @@ import { theme } from "../../styles/theme";
 
 export const Container = styled.section`
 width:100vw; 
-background:url('assets/images/pattern/pattern_orders.png');
+background:url('assets/images/pattern/patternBg.png');
 background-size:cover;
-background-color:#cec5b9;
+margin-top:140px;
 
 `;
 export const Wrapper = styled.div`
@@ -39,7 +39,6 @@ margin-right:20px;
 width:90%;     
 }
 
-
 `;
 
 
@@ -53,10 +52,10 @@ align-items:center;
 justify-content:center;
 width:500px;
 height:100%;
-background-color:#606060;
+background-color:#D66E64  ;
 padding:5px;
 padding-top:20px;
-
+border:1px solid ${theme.color.mainColor};
 
 h2{
 font-size:40px;
@@ -71,7 +70,7 @@ font-size:30px;
 }
 
 h3{
-font-family: ${theme.fonts.mainFont};
+font-family: ${theme.fonts.descriptionFont};
 color:white;
 
 }
@@ -100,6 +99,7 @@ span{
     p{
         text-align:center;
         width:100%;
+        font-family:${theme.fonts.descriptionFont};
 
         
 @media (max-width: 740px) {

@@ -2,15 +2,33 @@ export const Testimonials = [
 
     { 
         person: 1,
+
+        profile:{
+            nome: 'Gih Nails',
+            image: 'assets/images/feedbacks/feedback1.jpg',
+            type: 'Empresa'
+
+        },
         
-        description: ' " Oi! Minha mãe amou, eu provei e gostei muito também, é muitíssimo gostoso, amei a apresentação da pipoca, embalagem maravilhosa! " '
+        message: 'Gente, que pipoca maravilhosa!! É uma ótima opção para festas infantis.',
+      
+        
     
     },
 
     { 
         person: 2,
+
+        profile:{
+            nome: 'Gabriela - Maquiadora ',
+            image: 'assets/images/feedbacks/feedback2.jpg',
+            type: 'Empresa'
+
+        },
         
-        description: ' " Sua pipoca é maravilhosa, adorei!! " '
+        message: 'As pipocas são maravilhosas, além de virem em embalagens lindas!  '
+
+       
     
     },
 
@@ -18,18 +36,21 @@ export const Testimonials = [
 
     { 
         person: 3,
+
+        profile:{
+        nome: 'Doce Segredo',
+        image: 'assets/images/feedbacks/feedback3.jpg',
+        type: 'Empresa'
+
+        },
         
-        description: ' " A pipoca é diviina, não sei dizer qual é a melhor, estão de parabéns, vou querer experimentar outros sabores. " '
+        message: 'As pipocas são divinas! Compro sempre para matar a saudade!!', 
+
+     
     
     },
 
-    { 
-        person: 3,
-        
-        description: ' " Amei a pipooca, comi rezando rsrs, é uma delícia." '
-    
-    },
-
+   
 
 
 ];

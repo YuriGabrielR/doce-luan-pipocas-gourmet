@@ -10,7 +10,7 @@ export const Container = styled.div`
 position:relative;
 width:250px; 
 height:300px;
-background-color:#eae1d5;
+background-color:white;
 display:flex; 
 flex-direction:column;
 justify-content:center; 
@@ -18,7 +18,9 @@ align-items:center;
 padding:8px;
 gap:10px; 
 border-radius:10px;
-
+-webkit-box-shadow: 10px 15px 18px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 15px 18px -20px rgba(0,0,0,0.75);
+box-shadow: 10px 15px 18px -20px rgba(0,0,0,0.75);
 
 &::after{
     content:'';
@@ -58,7 +60,7 @@ text-align:center;
 z-index:5;
 
 h2{
-    font-family:${theme.fonts.mainFont}; 
+    font-family:${theme.fonts.descriptionFont}; 
     color: ${theme.color.mainColor}; 
     font-size:14px; 
 
@@ -67,7 +69,7 @@ h2{
 
 p{
     font-family:${theme.fonts.secondaryFont}; 
-    color: ${theme.color.mainColor}; 
+    color: #808080;
     font-size:10px;
 }
 `;

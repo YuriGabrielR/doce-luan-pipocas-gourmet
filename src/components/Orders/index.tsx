@@ -50,11 +50,10 @@ export default function Orders() {
 
           <span>
             <h3>Fazemos entregas em: </h3>
-            <p><strong> Roseira - SP</strong> </p>
-            <p> <strong>Lorena - SP</strong> </p>
-            <p><strong>Guaratinguetá - SP</strong> </p>
+            <p>  Lorena - SP </p>
+            <p>Guaratinguetá - SP </p>
 
-            <p>🚛 Em breve pelos Correios </p>
+            <p> Demais cidades, combinar! </p>
           </span>
 
           <TbStarFilled size='20px' color='white' />

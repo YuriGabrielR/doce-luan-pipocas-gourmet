@@ -8,6 +8,7 @@ export const theme = {
 
     fonts:{
         mainFont: 'Averia Serif Libre, cursive',
-        secondaryFont:'Roboto, sans-serif'
+        secondaryFont:'Roboto, sans-serif',
+        descriptionFont: 'Montserrat, sans-serif'
     }
 }

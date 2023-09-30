@@ -12,7 +12,6 @@ display:flex;
 flex-direction:column; 
 align-items:center;
 justify-content:center; 
-/* background-color:green; */
 width:100%;
 height:100%;
 
@@ -35,7 +34,7 @@ top:30px;
 font-size:30px; 
 font-family:${theme.fonts.mainFont}; 
 font-weight:700;
-color:white;
+color:${theme.color.mainColor};
 
 @media (max-width: 740px) {
     padding-top:35px;

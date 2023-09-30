@@ -5,17 +5,14 @@ export const Container = styled.footer`
 display:flex; 
 flex-direction:column;
 gap:30px;
-margin-top:100px;
+margin-top:20px;
 width:100vw; 
 height:auto;
 background-color:#eae1d5b0;
 padding:20px;
 border-top:1px solid ${theme.color.mainColor}; 
 
-@media (max-width:740px) {
-    
-    margin-top:180px; 
-}
+
 
 `;
 

@@ -24,10 +24,12 @@ z-index:12;
 `
 
 export const Header = styled.header`
+position:absolute;
 display:flex; 
 justify-content:center;
 width:100vw;
 height:97px;
+z-index:70;
 
 `
 
@@ -76,7 +78,7 @@ export const ListItemsNav = styled.ul<Props>`
         position:relative;
         transition: 0.3s ease-in-out all;
         font-weight:700;
-        font-family: 'Roboto', sans-serif;
+        font-family: ${theme.fonts.descriptionFont};
 
         a{
             color:${theme.color.mainColor}; 
@@ -137,7 +139,6 @@ display:flex;
 gap:10px;
 
 
-
     svg{
         cursor: pointer;
         color:${theme.color.mainColor}; 
@@ -156,9 +157,10 @@ gap:10px;
         position:absolute;
         opacity:${({$show} )=> $show ? 1 : 0};
         justify-content:center;
-        top:240px;
+        bottom: 3px;       
         width:100vw;
         
     }
 
 `
+

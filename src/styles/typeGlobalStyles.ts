@@ -1,4 +1,7 @@
 
 export type StyleProps = {
-    gap: string 
+    gap: string;
+    $justify: string;
+    $pt: string;
+    $display:boolean;
 }

@@ -1,76 +1,96 @@
 import { styled } from "styled-components";
 import { theme } from "../../styles/theme";
+import { StyleProps } from "../../styles/typeGlobalStyles";
 
 export const Containter = styled.section`
 display:flex; 
 flex-direction:column;
+justify-content:center;
 align-items:center;
-justify-content:space-around; 
+margin: 0 auto;
 width:100%;
-height:700px;
+height:auto;
 padding:20px;
-gap:50px;
+gap:10px;
+margin-top:250px;
 
 
-@media (max-width: 800px) {
+@media (max-width: 730px) {
     
-    margin-top:80px;
+    margin-top:600px;
 }
+
+@media (max-width:530px) {
+    
+margin-top:670px;
+gap:40px;
+}
+
+
 `;  
 
 export const Title = styled.h2`
 display:flex;
 align-items:center;
-gap:10px;
-position:relative;
-font-family: ${theme.fonts.mainFont}; 
+gap:8px;
+position:absolute;
+right:-140px;
+top:80px;
+font-family: ${theme.fonts.descriptionFont}; 
 text-align:center; 
-width:auto;
-color: ${theme.color.mainColor};
+color: grey;
 font-weight:700;
+font-size:35px;
+
+span{
+    color:${theme.color.secondaryColor};
+}
+
+@media (max-width:530px){
+
+font-size: 28px;
+right:-105px;
+
+
+};
+
+@media (max-width:530px){
+right:auto;
+left:50%;
+transform: translateX(-50%);
+top:-60px;
+
+
+};
+
 `;
+
 
 
 export const Content = styled.section`
 display:flex;
-justify-content:space-between;
 width:100%;
 height:100%;
 flex-wrap:wrap;
+padding:20px;
 
-@media (max-width:730px){
+@media (max-width:780px){
     justify-content:center;
 }
 `;
 
-export const ImageStar = styled.img`
-width:250px; 
-height:auto; 
-position:absolute;
-top:-70px;
-
-
-@media (max-width:730px){
-
-width:170px;
-height:170px;
-top:-110px;
-}
-
-`;
 
 export const ImagesContent = styled.div`
 display:flex; 
 flex-direction:column;
-align-items:center;
-justify-content:center;
+align-items:end;
 gap:15px;
 height:100%; 
-width:40%; 
+width:50%; 
 position:relative;
 
-@media (max-width:730px){
-
+@media (max-width:780px){
+    align-items:center;
     width:100%;
     height:auto;
     margin-top:30px;
@@ -79,13 +99,14 @@ position:relative;
 `;
 
 export const ImageAbout = styled.div`
+position:relative;
 background:url('assets/images/about/about-us_image.png');
 background-size:cover;
 background-position:center;
-width:300px;
-height:300px;
+width:380px;
+height:400px;
+
 z-index:10;
-filter: drop-shadow(3px 3px 5px #eda690 );
 
 
 @media (max-width:730px){
@@ -97,15 +118,12 @@ height:230px;
 `;
 
 export const ProfileText = styled.div`
+
 display:flex;
 flex-direction:column;
 gap:5px;
 
 h2{
-    font-size:25px;
-    text-align:center;
-    font-family:${theme.fonts.mainFont};
-    color:${theme.color.secondaryColor};
 
     @media (max-width:470px){
 
@@ -123,16 +141,21 @@ p{
 
 }`;
 
-export const TextContent = styled.div`
-width:60%;
+export const TextContent = styled.div<Partial<StyleProps>>`
+width:50%;
 display:flex; 
 flex-direction:column;
 align-items:center;
-margin-top:30px;
-gap:40px;
-padding-top:30px;
+justify-content:center;
+gap:35px;
+padding-top:${({$pt})=> ($pt ? $pt : '0px')};
 
-@media (max-width:730px){
+span{
+    color: pink;
+}
+
+
+@media (max-width:780px){
 
 width:100%;
 height:100%;
@@ -142,8 +165,8 @@ padding-top:5px;
 
 h2{
     
-    font-size:28px; 
-    color:#606060;
+    font-size:24px; 
+    color:#9e9d9d;
     font-weight:700;
     font-family:${theme.fonts.mainFont};
     text-align:center;
@@ -175,8 +198,27 @@ width:80%;
 }`;
 
 
-export const IconsAbout = styled.div`
+export const AboutSecondary = styled.div`
 display:flex; 
-flex-direction:row; 
-gap: 8px;
+align-items:center;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap-reverse;
+width:100%; 
+height:auto;
+`;  
+
+export const AboutImageSecond = styled.img`
+object-fit:contain;
+object-position:center;
+width:340px;
+height:400px;
+z-index:10;
+
+
+@media (max-width:730px){
+
+width:230px;
+height:230px;
+}
 `;

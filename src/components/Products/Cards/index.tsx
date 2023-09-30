@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Navigation } from 'swiper/modules';
+import {  Pagination, Autoplay } from 'swiper/modules';
 
 export default function Cards() {
     return (
@@ -12,9 +12,14 @@ export default function Cards() {
         <Swiper
             slidesPerView={'auto'}
             loop={true}
-            navigation={true}
+            autoplay={{
+
+                delay:3000,
+                disableOnInteraction: true,
+            }}
             grabCursor={true}
-            modules={[ Navigation]}
+            pagination={true}
+            modules={[ Pagination, Autoplay]}
             className="Swiper_Products"
            
       

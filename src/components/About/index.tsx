@@ -1,48 +1,25 @@
-import { Icons } from "./data";
-import { Containter, Content, IconsAbout, ImageAbout, ImageStar, ImagesContent, ProfileText, TextContent, Title } from "./styles";
-
-import {WiStars} from 'react-icons/wi'
+import { AboutImageSecond, AboutSecondary, Containter, Content, ImageAbout, ImagesContent, TextContent, Title} from "./styles";
 
 
 export default function About() {
   return (
     <Containter>
-
-      <Title id="#Sobre">
-      <WiStars size='40px'/> 
-
-        Sobre Nós 
-         
-      <WiStars size='40px'/> </Title>
-
       <Content>
 
         <ImagesContent>
-          <ImageStar src="assets/images/about/estrela.png" />
-          <ImageAbout />
+          
+          <ImageAbout>
 
-          <ProfileText>
-
-            <h2> Chef Rebeca </h2>
-            <p> Chef e criadora da marca Doce Luan </p>
-
-          </ProfileText>
-
-          <IconsAbout>
-
-            {Icons.map((icon, index) => (
+            <Title id="#Sobre">
+              Sobre <span> Nós</span> 
+            </Title>
 
 
-              <a key={index} target="_blank" href={icon.src}>{icon.icon}</a>
-
-            ))}
-
-
-          </IconsAbout>
+          </ImageAbout>
 
         </ImagesContent>
 
-        <TextContent>
+        <TextContent $pt="170px">
           <h2> Bem-vindos à nossa <strong>pipocaria gourmet!</strong>
           </h2>
 
@@ -63,6 +40,31 @@ export default function About() {
 
         </TextContent>
       </Content>
+
+          <AboutSecondary>
+           <TextContent>
+
+            <h2> Feitas com  <span>Amor</span>  </h2>
+
+            <p>
+            Na Doce Luan , nossas pipocas gourmet são mais do que apenas um lanche delicioso; são uma expressão de amor e paixão pela gastronomia. Cada pipoca que sai de nossa cozinha é criada com cuidado artesanal e um toque de carinho que você pode saborear em cada mordida.
+            </p>
+
+
+
+            <p>
+            O que nos diferencia é nossa dedicação às encomendas personalizadas. Quer você esteja planejando uma festa, evento corporativo ou apenas deseje um agrado especial, estamos aqui para criar pipocas que se ajustem perfeitamente ao seu gosto e ocasião. Nossa equipe está sempre pronta para transformar suas ideias em realidade e garantir que sua experiência com nossas pipocas seja inesquecível.
+            </p>
+
+           </TextContent>
+
+           <AboutImageSecond 
+           src="assets/images/about/popcorn_about.jpg"
+           alt="imagem-de-uma-pipoca-gourmet-tema-carnaval"
+           />
+
+
+          </AboutSecondary>
 
     </Containter>
 
