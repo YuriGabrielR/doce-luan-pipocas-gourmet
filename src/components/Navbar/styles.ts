@@ -157,7 +157,7 @@ gap:10px;
         position:absolute;
         opacity:${({$show} )=> $show ? 1 : 0};
         justify-content:center;
-        bottom: 3px;       
+        bottom: 5px;       
         width:100vw;
         
     }
