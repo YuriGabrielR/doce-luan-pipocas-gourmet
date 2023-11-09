@@ -1,21 +1,51 @@
+<h1 align="center">Doce Luan - Pipocaria Gourmet</h1>
 
-<h1 id="sobre" style="margin-top: 20px; margin-bottom: 20px; text-align: center;"><strong>Doce Luan Pipocas Gourmet </strong></h1>
+###
 
-> Site desenvolvido para a empresa Doce Luan, o intuito da página era mostrar os produtos da pipocaria e os serviços prestados pela mesma, além de se atentar com o desempenho da page e
-> nos mecanismos de buscas (SEO) <b>.
->
-> 
-> 👨🏽‍💻 TECNOLOGIAS UTILIZADAS: React, TypeScript & JavaScript. <br> <br>
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="36" height="36" alt="Reactjs" /></a>
- <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" width="36" height="36" alt="TypeScript" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="Javascript" /></a>
+<h3 align="left">🎯 Objetivo do projeto:</h3>
+
+###
+
+<p align="left">Site desenvolvido para uma pequena empresária do ramo de pipocas gourmet, o objetivo era destacar seus serviços e produtos exclusivos, procurando implementar técnicas de SEO visando obter uma boa performance em buscas e uma interface bonita e moderna.</p>
+
+###
 
 
-> 👨🏽‍💻 BIBLIOTECAS E FERRAMENTAS: Styled Components e Swiper JS  <br>
->
-> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://styled-components.com/nav-logo.png" width="180" height="50" alt="Styled-Components" /></a> 
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://github.com/YuriGabrielR/doce-luan-pipocas-gourmet/assets/94508908/49ebe971-d0af-406b-8892-e3123f25c431" width="50" height="50" alt="Swiper-Js" /></a>
- 
+###
+
+<h3 align="left">Tecnologias: React, TypeScript e JavaScript</h3>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/javascript/F7DF1E" height="40" alt="javascript logo"  />
+</div>
+
+###
+
+<h3 align="left">Bibliotecas & Ferramentas: Styled Components, Swiper, Figma e Photoshop</h3>
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=styledcomponents" height="40" alt="styledcomponents logo"  />
+  <img width="12" />
+   <img src="https://skillicons.dev/icons?i=figma" height="40" alt="figma logo"  />
+  <img width="12" />
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/94508908/271746718-49ebe971-d0af-406b-8892-e3123f25c431.png" height="40" alt="figma logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=ps" height="40" alt="adobephotoshop logo"  />
+</div>
+
+###
+
+<h2 align="center">Visualização do projeto: 🌐👀</h2>
+
+###
 
 
 
@@ -26,5 +56,3 @@
 
 <br>
 
-
-Feito por Yuri Ramos 👋🏽
